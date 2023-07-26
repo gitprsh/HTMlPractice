@@ -2,8 +2,18 @@
     <head>
 <title>Page 1</title>
 <link rel="icon" type="image/jpg" href="oneto.jpg">
+<script>
+    function inner()
+    {
+        document.getElementById("submitbutton").innerHTML="HiSurya";
+    }
+</script>
     </head>
     <body>
+        <input type="text" placeholder="username" size="30px">
+        <input type="password" placeholder="password" size="30px">
+        <h1 id="submitbutton" style="color: red;"></h1>
+        <button onclick="inner();"> submit</button>
         <h1> HI!!</h1>
     </body>
 </html>
