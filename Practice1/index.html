@@ -11,14 +11,15 @@
 <script>
     function inner()
     {
-        document.getElementById("submitbutton").innerHTML="HiSurya";
+        var name= document.getElementById("name").value;
+        document.getElementById("submitbutton").innerHTML="Hi" + " " + name ;
     }
 </script>
     </head>
     <body style="background-image: url(backgroung.jpeg); background-size:cover;">
         <!-- <input type="date">
         <img src="oneto.jpg"> -->
-        <input type="text" placeholder="username" size="30px">
+        <input id="name" type="text" placeholder="username" size="30px">
         <input type="password" placeholder="password" size="30px">
         <h1 id="submitbutton" style="color: red;"></h1>
         <button onclick="inner();"> submit</button>
