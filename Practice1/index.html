@@ -1,11 +1,12 @@
 <html>
     <head>
 <title>Page 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/jpg" href="oneto.jpg">
 <style>
-    #hn
+    .hn
     {
-        border-bottom: red;
+        margin: 300px 600px 300px 600px
     }
 </style>
 <script>
@@ -16,10 +17,10 @@
     }
 </script>
     </head>
-    <body style="background-image: url(backgroung.jpeg); background-size:cover">
+    <body class="hn" style="background-image: url(backgroung.jpeg); background-size:cover">
         <!-- <input type="date">
         <img src="oneto.jpg"> -->
-        <input id="name" type="text" placeholder="username" size="30px">
+        <input id="name" type="text" placeholder="username" size="30px"> <br>
         <input type="password" placeholder="password" size="30px">
         <h1 id="submitbutton" style="color: red"></h1>
         <button onclick="inner()"> submit</button>
