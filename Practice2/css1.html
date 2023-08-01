@@ -1,14 +1,70 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             h1
             {
                 font-family: "Audiowide" , san-serif;
             }
+            i 
+            {
+                font-size: 60px;
+                color: yellowgreen;
+            }
         </style>
+        <title>CSS</title>
+        <link rel="icon" type="image/jpeg" href="fav1.jpeg">
+        <meta name="viewport" content="width=device-width, initial-scale=1"
     </head>
-    <body>
+    <body style="background-image: url(bg1.jpeg); background-size: cover;">
         <h1> Hello World </h1>
+        <i class="fa fa-thumbs-up">
+        <i class="fa fa-heart">
+        <i class="fa fa-car">
+        <i class="fa fa-file">
+        <i class="fa fa-download">
+        <i class="fa fa-search">
+        <i class="fa fa-fire">
+        <i class="fa fa-glass">
+        <i class="fa fa-mobile">
+        <i class="fa fa-laptop">
+        <i class="fa fa-desktop">
+        <i class="fa fa-bus">
+        <i class="fa fa-tree">
+        <i class="fa fa-leaf">
+        <i class="fa fa-bicycle">
+        <i class="fa fa-plane">
+        <i class="fa fa-home">
+        <i class="fa fa-bolt">
+            <button id="r1" value="red" onclick="f1()">RED</button>
+            <button id="b1" value="blue" onclick="f2()">BLUE</button>
+            <button id="g1" value="green" onclick="f3()">GREEN</button>
+            <button onclick="f4()" >REVERT</button>
+            <script>
+                function changecolor(color)
+                {
+                    document.body.style.background=color;
+                }
+                function f4()
+                {
+                   location.reload();
+                }
+                function f1()
+                {
+                    var cr=document.getElementById("r1").value;
+                    changecolor(cr);
+                }
+                function f2()
+                {
+                    var cr=document.getElementById("b1").value;
+                    changecolor(cr);
+                }
+                function f3()
+                {
+                    var cr=document.getElementById("g1").value;
+                    changecolor(cr);
+                }
+            </script>
     </body>
-</html>
+    </html>
