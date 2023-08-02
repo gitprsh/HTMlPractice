@@ -5,17 +5,37 @@
         <meta charset="utf-8">
         <link rel="icon" type="image/jpeg" href="fav1.jpeg">
     </head>
-    <body>
+    <body oncontextmenu="return true" style="background-image: url(backgroung.jpeg); background-size: cover;">
         <center>
-            <h1>HTML FORM FIELDS</h1>
-            <form>
+            <h1 style="color: white;">HTML FORM FIELDS</h1>
+            <form style="background-image: url(bg1.jpeg); background-size: cover; margin:0px 300px; padding: 5px; text-align: centre;">
                 <label>Username:</label><input size="30" type="text"><br><br>
                 <label>Password:</label><input id="pass" size="30" type="password">
                 <a onclick="show()" style="text-decoration: none; color: blue;">Show</a>
                 <a onclick="hide()" style="text-decoration: none; color: blue;">/Hide</a><br><br>
                 <lable>Email:</lable><input type="email" size="40" placeholder="Email Here"><br><br>
-                <button>Submit</button>
-
+                <label>City:</label>
+                <select>
+                    <option>Select your city</option>
+                    <option>Hyderabad</option>
+                    <option>Mumbai</option>
+                    <option>Chennai</option>
+                    <option>Banglore</option>
+                    <option>Delhi</option>
+                </select><br><br>
+                <label>DOB:</label>
+                <input type="date" max="2006-09-19"><br><br>
+                <label>Gender:</label>
+                <input name="gen" type="radio">Male</input>
+                <input name="gen" type="radio">Female</input>
+                <input name="gen" type="radio">Other</input><br><br>
+                <label>Resume:</label>
+                <input type="file" multiple accept=".jpeg"><br><br>
+                <label>About Yourself:</label>
+                <textarea></textarea><br><br>
+                <input type="checkbox">I Accept The Terms and Conditions</input><br><br>
+                <input type="reset"><br><br>
+                <button disabled>Submit</button>
             </form>
         </center>
         <script>
