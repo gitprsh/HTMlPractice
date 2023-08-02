@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="icon" type="image/jpeg" href="fav1.jpeg">
+    </head>
+    <body>
+        <center>
+            <h1>HTML FORM FIELDS</h1>
+            <form>
+                <label>Username:</label><input size="30" type="text"><br><br>
+                <label>Password:</label><input id="pass" size="30" type="password">
+                <a onclick="show()" style="text-decoration: none; color: blue;">Show</a>
+                <a onclick="hide()" style="text-decoration: none; color: blue;">/Hide</a><br><br>
+                <lable>Email:</lable><input type="email" size="40" placeholder="Email Here"><br><br>
+                <button>Submit</button>
+
+            </form>
+        </center>
+        <script>
+            function show()
+            {
+                document.getElementById("pass").type="text";
+            }
+            function hide()
+            {
+                document.getElementById("pass").type="password";
+            }
+        </script>
+    </body>
+</html>

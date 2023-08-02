@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="icon" type="image/jpeg" href="fav1.jpeg">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <style>
+            #bt{
+                margin: 0px 0px 0px 1400px;
+                background-color: rgb(6, 231, 216);
+                padding: 2px;
+                font-family: "Audiowide", sans-serif;
+            }
+        </style>
+
+    </head>
+    <body>
+        <button id="bt" onclick="ref()">REFRESH</button>
+        <!--UNORDERD LIST-->
+        <ul style="list-style-type:disc;">
+        <li>List1</li>
+        <ul style="list-style-type: square;">
+            <li>SUBList1</li>
+            <li>SUBList2</li>
+            <li>SUBList3</li>
+        </ul>
+        <li>List2</li>
+        <li>List3</li>
+        </ul>
+        <!--ORDERED LIST-->
+        <ol start="5"><!--<ol type="A">-->
+            <li>List1</li>
+            <li>List2</li>
+            <li>List3</li>
+        </ol>
+        <!--DESCRIPTION LIST-->
+        <dl>
+            <dt>ICE</dt>
+            <dd>solid form of water</dd>
+            <dt>VAPOUR</dt>
+            <dd>gaseous form of water</dd>
+        </dl>
+
+
+        <script>
+            function ref()
+            {
+                location.reload();
+            }
+        </script>
+    </body>
+</html>
