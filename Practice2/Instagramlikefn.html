@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <i id="hrt" onclick="like()" class="fa fa-heart-o" style="color: black; font-size: 100px;"></i>
+        <h1 id="count" style="display: inline;"></h1>
+        <script>
+            var counter=0;
+            function like()
+            {
+               if(counter==0)
+               {
+                counter++;
+                document.getElementById("count").innerHTML=counter;
+               }
+               else
+               {
+                counter--;
+                document.getElementById("count").innerHTML="";
+               }
+                var cls=document.getElementById("hrt").className;
+                if(cls=="fa fa-heart-o")
+                {
+                    document.getElementById("hrt").className="fa fa-heart";
+                    document.getElementById("hrt").style.color="red";
+                }
+                else if(cls=="fa fa-heart")
+                {
+                    document.getElementById("hrt").className="fa fa-heart-o";
+                    document.getElementById("hrt").style.color="black";
+                }
+
+            }
+
+        </script>
+
+
+    </body>
+</html>
