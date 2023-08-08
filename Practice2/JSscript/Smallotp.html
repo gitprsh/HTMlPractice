@@ -1,0 +1,24 @@
+<html>
+    <head></head>
+    <body>
+       Enter OTP: <input type="number" placeholder="EnterOtp" id="OTP">
+       <button onclick="otpverify()">Submit</button>
+        <script>
+            function otpverify()
+            {
+                var otp=document.getElementById("OTP").value;
+                console.log(typeof document.getElementById("OTP").value);
+                otp=parseInt(otp);
+                if(otp===54321)
+                {
+                    alert("OTP VALID!");
+                }
+                else
+                {
+                    alert("OTP INVALID!")
+                }
+                console.log(typeof otp);
+            }
+        </script>
+    </body>
+</html>

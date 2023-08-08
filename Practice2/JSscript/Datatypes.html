@@ -1,0 +1,52 @@
+<html>
+    <head></head>
+    <body>
+        <lable>Email: <input type="text" id="email" placeholder="Enter Your Email" style="width: 350px;">
+        <button onclick="submit()">Submit</button>
+        <script>
+            // var a=100;
+            // console.log(a);
+            // console.log(typeof a);
+            // var rating=4.12;
+            // console.log(typeof rating);
+            // var isdone=true;
+            // console.log (typeof isdone);
+            // var isdone=false;
+            // console.log(typeof isdone);
+
+            // var password="kiran";
+            // console.log(typeof password);
+
+            // var firstname="digital";
+            // var lastname="lync";
+            // firstname=firstname.concat(lastname);
+            // console.log(firstname);
+            function submit()
+            {
+                var email=document.getElementById("email").value;
+                //console.log(typeof email);
+                email = email.toLowerCase();
+                console.log(email);
+                email= email.trim();
+                console.log(email);
+                if(email.includes('@gmail.com'))
+                {
+
+                }
+                else
+                { 
+                    if(email.includes('@') && email.includes('.'))
+                    {
+                    
+                     }
+                     else
+                     {
+                        email=email.concat("@gmail.com");
+                     }
+                }
+                console.log(email);
+                document.getElementById("email").value=email;   
+            }
+        </script>
+    </body>
+</html>
