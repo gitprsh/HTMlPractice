@@ -11,16 +11,20 @@
             console.log(typeof counter);
             function like()
             {
-               if(counter==0)
-               {
+
+                console.log("like called");
+            //    if(counter==0)
+            //    {
+            //     counter++;
+            //     document.getElementById("count").innerHTML=counter;
+            //    }
+            //    else
+            //    {
+            //     counter--;
+            //     document.getElementById("count").innerHTML="";
+            //    }
                 counter++;
                 document.getElementById("count").innerHTML=counter;
-               }
-               else
-               {
-                counter--;
-                document.getElementById("count").innerHTML="";
-               }
                 var cls=document.getElementById("hrt").className;
                 if(cls=="fa fa-heart-o")
                 {
@@ -33,6 +37,7 @@
                     document.getElementById("hrt").style.color="black";
                 }
             }
+            console.log("counter called", counter);
         </script>
 
 
