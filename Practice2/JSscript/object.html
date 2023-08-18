@@ -1,0 +1,40 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var obj = {
+                name:"surya",
+                lastname:"prakash",
+                dob:{
+                    date:18,
+                    month:12,
+                    year:2000
+                },
+                address:{
+                    hno:"132-6",
+                    village:"kukatpally",
+                    city:"hyderabad",
+                    states:["telangana", "tamilnadu","kerala"]
+                },
+                languages:["telugu", "english"]
+            }
+            
+            console.log(obj.name);
+            console.log(obj.languages[0]);
+            console.log(obj.dob.date);
+            console.log(obj.address.states[2]);
+            obj.address.states.push("Karnataka");
+            console.log(obj.address.states);
+            var index=obj.address.states.indexOf("tamilnadu");
+            console.log(index);
+            obj.address.states.splice(index,1);
+            console.log(obj.address.states);
+            obj.address.states.shift();
+            console.log(obj.address.states);
+            obj.address.states.unshift("Telangana");
+            console.log(obj.address.states);
+            obj.address.states.splice(index,0,"tamilnadu");
+            console.log(obj.address.states);
+        </script>
+   </body>
+</html>

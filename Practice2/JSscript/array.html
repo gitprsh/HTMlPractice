@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var arr = [1,2,true,false,"surya", [1,0,"prakash"]];
+            console.log(arr[5][2]);
+            // console.log(arr);
+            // arr.pop();
+            // console.log(arr.length);
+            // arr.push(100);
+            // console.log(arr.length);
+            // console.log(arr);
+            console.log(arr.indexOf(false));
+            var index=arr.indexOf("surya");
+            console.log(arr);
+            arr.splice(index+1,0,false);
+            arr.splice(index+1,0,false);
+            arr.splice(index+1,0,false);
+            arr.splice(index+1,0,true );
+            var index2=arr.lastIndexOf(false);
+            console.log(index2);
+            arr.splice(index2,1);
+            console.log(arr);
+        </script>
+    </body>
+</html>
