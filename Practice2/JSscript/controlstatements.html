@@ -1,0 +1,67 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <!-- <input type="text" id="course">
+        <button onclick="swit()">submit</button> -->
+        <h1 style="display: inline;">select any of these following course:</h1>
+        <select onchange="swit()" style="font-size: 20px;" id="course">
+            <option>Select Courses</option>
+            <option>java</option>
+            <option>mern</option>
+            <option>mevn</option>
+            <option>mean</option>
+        </select>
+        <br><br>
+        <h1 style="display: inline;">select the language you prefer</h1>
+        <select onchange="swit1()" id="language" style="font-size: 20px;">
+        <option>Select Language</option>
+        <option>telugu</option>
+        <option value="tamil">Tamil</option>
+        <option value="kanada">kanada</option>
+        <option value="malyalam">Malyalam</option>
+        </select>
+        <h1 id="display"></h1>
+        <script>
+           // var a=10;
+            //if else statement
+            function swit(){
+                var course=document.getElementById("course").value;
+                console.log(course);
+            if(course.length!=0){
+            switch(course)
+            {
+                case "java": alert("java selected"); break;
+                case "mern": alert("mern selected"); break;
+                case "mevn": alert("mevn selected"); break;
+                case "mean": alert("mean selected"); break;
+                default: alert("course not available!");
+
+            }
+          }
+          else{
+                alert("we dont allow empty value!!");
+            }
+        }
+        function swit1()
+        {
+            var lan= document.getElementById("language").value;
+            if(lan.length!=0)
+            {
+                switch(lan)
+                {
+                    case "telugu":document.getElementById("display").innerText="హాయ్ ఎలా ఉన్నారు?";break;
+                    case "tamil":document.getElementById("display").innerText="ஹாய் எப்படி இருக்கிறீர்கள்?";break;
+                    case "kanada":document.getElementById("display").innerText="ನಮಸ್ಕಾರ ಹೇಗಿದ್ದೀರಾ?";break;
+                    case "malyalam":document.getElementById("display").innerText="ഹായ്, സുഖമാണോ?";break;
+
+                    default:alert("try again");location.reload();break;
+                }
+            }
+            else{
+                alert("try again");
+            }
+        }
+        </script>
+    </body>
+</html>
