@@ -1,0 +1,32 @@
+<html>
+    <head></head>
+    <ul id="unlist" style="list-style-type:square;"></ul>
+    <body>
+        <script>
+            //while loop
+            var index=["kiran","sai","surya","prakash"];
+            var len=index.length;
+             var i=0, listitems="";
+            while(i<len)
+            {
+               listitems = listitems+"<li>"+index[i]+"</li>"
+                i++;
+            }
+            console.log(listitems);
+            document.getElementById("unlist").innerHTML=listitems;
+
+            // Do while loop
+            var n=0;
+            do{
+                console.log(n);
+                n++;
+            }while(n<10);
+            
+            //for loop
+            for(var j=0;j<10;j++)
+            {
+                console.log(j);
+            }
+        </script>
+    </body>
+</html>
