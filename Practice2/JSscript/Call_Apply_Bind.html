@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var obj1={
+                name:"surya",
+                city:"Hyderabad",
+                getdetails: function(a,b,c){
+                    return this.name+"\t"+this.city+"\t"+a+"\t"+b+"\t"+c
+                }
+            }
+            //console.log(obj1.getdetails());
+            var obj2={
+                name:"Prakash",
+                city:"chennai"
+            }
+            var arr=[10,20,30,40,50]
+            // call function
+            console.log(obj1.getdetails.call(obj2));
+
+            // apply function
+            console.log(obj1.getdetails.apply(obj2,arr));
+
+            // Bind function
+
+            var fn=obj1.getdetails.bind(obj1);
+            console.log(fn());
+        </script>
+    </body>
+</html>

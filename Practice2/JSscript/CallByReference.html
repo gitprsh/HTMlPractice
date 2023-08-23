@@ -1,0 +1,35 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            // with objects
+            var obj={
+                name:"skayala",
+                Id:46116617,
+                email:"Surya-prakash.kayala@gmail.com"
+            }
+            console.log(obj);
+            function obmod(x)
+            {
+                x.lastname="kayala";
+                x.age=22;//-- add
+                x.name="Prakash";//---modify
+                delete x.email;//---delete
+            }
+            obmod(obj);
+            console.log(obj);
+            // with array
+            var arr=[10,20,"surya",true]
+            console.log(arr);
+            function armod(x){
+                x.push(100);
+                x.shift();
+                x.unshift(10);
+                x.splice(1,1);
+                x.splice(1,0,"surya");
+            }
+            armod(arr);
+            console.log(arr);
+        </script>
+    </body>
+</html>

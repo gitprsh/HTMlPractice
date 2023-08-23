@@ -1,0 +1,57 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            //Ananymous function
+
+            function f1(x)
+            {
+                x();
+            }
+            f1(function (){ console.log("ananymous function called");});
+
+            // using foreach function
+
+            var arr=[10,20,30,40,50];
+            arr.forEach(function (val)
+            {
+                console.log(val);
+            });
+
+            //function expression
+
+            var call=function (){ console.log("hai hello");};
+
+            function fi(x)
+            {
+                x();
+            }
+            function fi1(x)
+            {
+                x();
+            }function fi2(x)
+            {
+                x();
+            }
+            fi(call);
+            fi1(call);
+            fi2(call);
+
+            //Returning functions
+
+             function Returning()
+             {
+                return function (){console.log("function returned");};
+             }
+             var xty=Returning();
+             xty();
+
+             // or we can also call that function without expression
+
+             Returning()();
+
+             //IIFE'S
+             (function (){console.log("Hello IIFES OF surya")})();
+        </script>
+    </body>
+</html>
