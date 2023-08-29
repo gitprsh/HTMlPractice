@@ -1,0 +1,21 @@
+<html>
+    <head></head>
+    <body>
+        <form>
+            
+        </form>
+
+        <script>
+            var arr=[10,20,30,90,80,"hi","Hello","bye"];
+            var newarr=arr.filter(function (value){
+                if((typeof value)==="string")
+                {
+                    return value;
+                }
+            });
+            var date=new Date();
+            console.log("Date :", date);
+            console.log(newarr);
+        </script>
+    </body>
+</html>

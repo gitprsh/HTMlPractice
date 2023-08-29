@@ -1,0 +1,56 @@
+<html>
+    <head></head>
+    <body>
+        <h1>USER DETAILS</h1>
+            <input type="text" id="username" placeholder="Enter Username"><br><br>
+            <input type="text" id="email" placeholder="Enter Emailid"><br><br>
+            <input type="text" id="mobile" placeholder="Enter MobileNumber"><br><br>
+            <button onclick="adduser()">ADD USER</button>
+            <button onclick="delet()">DELETE USER</button>
+            <ul style="list-style-type: none;" id="userlist"></ul>
+            <div style="display: none;" id="divi">
+                <h3>select users to delete :</h3>
+                <ul style="list-style-type: none;" id="userlist2"></ul>
+            </div>
+        <script>
+            var users=[];
+            function adduser(){
+                document.getElementById("divi").style.display="none";
+                var username=document.getElementById("username").value;
+                var email=document.getElementById("email").value;
+                var mobile=document.getElementById("mobile").value;
+                var user={
+                    username: username,
+                    email: email,
+                    mobile:mobile
+                }
+                users.push(user);
+                console.log(users);
+                showuser();
+            }
+            function showuser()
+            {
+                userlist=document.getElementById("userlist");
+                var list="";
+                users.forEach(function (value){
+                    var num=users.indexOf(value);
+                    list=list+"<li>"+value.username+"&nbsp"+value.email+"&nbsp"+value.mobile+"&nbsp"+"</li>";
+                });
+                userlist.innerHTML=list;
+            }
+            function delet(){
+                document.getElementById("userlist").style.display="none";
+                document.getElementById("divi").style.display="block";
+                userlist=document.getElementById("userlist2");
+                var list="";
+                users.forEach(function (value){
+                    var num=users.indexOf(value);
+                    list=list+"<li>"+"<input type=radio>"+"</input>"+"&nbsp"+value.username+"&nbsp"+value.email+"&nbsp"+value.mobile+"&nbsp"+"</li>";
+                });
+                userlist.innerHTML=list;
+
+            }
+
+        </script>
+    </body>
+</html>

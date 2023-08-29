@@ -21,6 +21,22 @@
             console.log(index2);
             arr.splice(index2,1);
             console.log(arr);
+
+            var arr1=[10,20,90,30,40,0,true,false]
+            console.log("displaying using foreach function");
+            arr1.forEach(function (value){
+                console.log(value);
+            });
+            console.log("displaying using filter function");
+            var num=arr1.filter(function (value){
+                return value;
+            });
+           console.log(num);
+            console.log("displaying using map function");
+            var num=arr1.map(function (value){
+                return value*2;
+            });
+            console.log(num);
         </script>
     </body>
 </html>

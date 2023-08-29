@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <!-- <meta http-equiv="refresh" content="1"> -->
+    </head>
+    <body>
+        <h1 id="date"></h1>
+        <script>
+          setInterval( function clock(){
+            var date=new Date();
+            var h1=document.getElementById("date");
+            h1.innerText=addzero(date.getHours())+":"+addzero(date.getMinutes())+":"+addzero(date.getSeconds());},1000);
+            function addzero(x){
+                if(x<10)
+                return "0"+x;
+                else
+                return x;
+            }
+           
+               try{ a=10;
+                console.log(a);
+                console.log(b);
+                }
+                catch(error)
+                {
+                    console.log(error);
+                }
+                console.log("data base connection");
+        </script>
+    </body>
+</html>
