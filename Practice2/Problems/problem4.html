@@ -1,0 +1,109 @@
+<html>
+    <head></head>
+
+    <body>
+        <input type="text" id="pass" placeholder="Enter Password"><span style="color: red;" id="msg"></span>
+       <br><br> <button onclick="passcheck()">Enter</button>
+        <script>
+            // var upper=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+            // var lower=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+            // var num=[1,2,3,4,5,6,7,8,9,0];
+            // var special=["!","@","#","$","%","^","&","*","(",")","~","?"];
+            
+            // function passcheck()
+            // {
+            //     var password= document.getElementById("pass").value;
+            //  if(password.length<8)
+            //  {
+            //     document.getElementById("msg").innerText="Password should be atleast 8 characters";
+            //     return;
+            //  }
+            //  else{
+            //     document.getElementById("msg").innerText="";
+            //  }
+            //  if(check(password,upper)!=true)
+            //  {
+            //     document.getElementById("msg").innerText="Password should contain atleast one upper case";
+            //     return;
+            //  }
+            //  if(check(password,lower)!=true)
+            //  {
+            //     document.getElementById("msg").innerText="Password should contain atleast one lower case";
+            //     return;
+            //  }
+            //  if(check(password,num)!=true)
+            //  {
+            //     document.getElementById("msg").innerText="Password should contain atleast one Number";
+            //     return;
+            //  }
+            //  if(check(password,special)!=true)
+            //  {
+            //     document.getElementById("msg").innerText="Password should contain atleast one special character";
+            //     return;
+            //  }
+            // }
+            // function check(pass,array)
+            // {
+            //     var count=0;
+            //     for(i=0;i<array.length;i++)
+            //     {
+            //         if(pass.includes(array[i]))
+            //         {
+            //             count++;
+            //             return true;
+            //         }
+            //     }
+            //     if(count==0)
+            //     {
+            //         return false;
+            //     }
+            // }
+
+            // Now using Regular Expressions
+            function passcheck()
+            {
+                var password= document.getElementById("pass").value;
+             if(password.length<8)
+             {
+                document.getElementById("msg").innerText="Password should be atleast 8 characters";
+                return;
+             }
+             else{
+                document.getElementById("msg").innerText="";
+             }
+             if (/[A-Z]+/g.test(password)) {
+                msg.innerText = "";
+            }
+            else {
+                msg.innerText = "password should have atleast 1 uppercase";
+                return;
+
+            }
+            if (/[a-z]+/g.test(password)) {
+                msg.innerText = "";
+            }
+            else {
+                msg.innerText = "password should have atleast 1 lowercase";
+                return;
+
+            }
+            if (/[0-9]+/g.test(password)) {
+                msg.innerText = "";
+            }
+            else {
+                msg.innerText = "password should have atleast 1 digit";
+                return;
+            }
+            if (/\W+/g.test(password)) {
+                msg.innerText = "";
+            }
+            else {
+                msg.innerText = "password should have atleast 1 special character";
+                return;
+
+            }
+            }
+        
+        </script>
+    </body>
+</html>
